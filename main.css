@@ -82,3 +82,24 @@ section{
 section h2{
     margin-bottom: 16px;
 }
+
+.lista-veiculos{
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li{
+    list-style: none;
+    max-width: 30%;
+}
+
+.lista-veiculos img{
+    max-width: 100%;
+}
+
+.lista-veiculos li h3{
+    margin: 16px 0;
+}
+
+.item-central{
+    margin: 0 5%;
+}
