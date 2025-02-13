@@ -21,11 +21,18 @@ header, footer {
     color: #fff;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 h1{
     padding: 5px;
 }
 
-header > .container{
+header > .container, footer > .container{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -150,7 +157,7 @@ button:hover{
 
 .form-campo textarea{
     resize: none;
-    width: 120px;
+    height: 120px;
 }
 
 form, textarea{
@@ -163,8 +170,10 @@ form button{
 
 footer li{
     list-style: none;
+    margin-left: 16px;
 }
 
 footer li img{
-
+    height: 32px;
 }
+
