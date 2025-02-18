@@ -46,8 +46,13 @@ $(document).ready(function(){
         }
        })
 
-       $('.lista-veiculos button').onclick(function(){
+    //ao clicar no botão ele é direcionado para o formulário
+       $('.lista-veiculos button').click(function(){
         const destino = $('#contato')
+
+       const nomeVeiculo = $(this).parent().find('h3').text() //encontra o texto do h3 dentro do pai do this(no caso o button) e armazena na constante
+
+       $('#interesse').val(nomeVeiculo) //preenche o formulário com o valor da constante
 
         $('html').animate({
             scrollTop: destino.offset().top
